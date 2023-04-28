@@ -1,4 +1,8 @@
 
+.logo img {
+   width: 260px;
+   height: 80px;
+}
 #mainnav {
     color: black;
     font-size: medium;
@@ -14,14 +18,18 @@ body {
     display: flex;
 }
 .navigation {
-    margin: 50px 10px 50px 50px;
+    margin: 60px 10px 50px 50px;
     max-width: 400px;
+    padding-top: 15px;
 }
 .navigation ul {
     list-style: none;
     color: black;
-    padding: 20px;
-    line-height: 30px;
+    padding: 20px 20px 20px 30px;
+    line-height: 25px;
+}
+nav ul li{
+    line-height: 25px;
 }
 /*.photoDrop li a {
     padding-left: 10px;
@@ -35,16 +43,21 @@ body {
     font-weight: 600;
     font-size: large;
 }
+.social-links {
+    list-style: none;
+    padding: 20px 20px 20px 30px;
+    font-weight: 300;
+    color: darkgrey;
+}
 .content {
-    float: right;
-    margin: 50px 30px 50px 75px;
-    padding: 10px 30px 10px 100px;
-    display: flex;
-    justify-content: space-evenly;
-    justify-items: center;
-    flex-wrap: wrap;
+    margin: 50px 30px 50px 45px;
+    padding: 10px 30px 10px 50px;
     max-width: 100%;
-    /*background-color: blue;*/
+}
+.column {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 .column img {
     margin: 5px;
@@ -59,5 +72,30 @@ a:link, a:visited {
     text-decoration: none;
 }
 a:hover {
-    color: gray;
+    color: forestgreen;
+}
+.aboutPage {
+    display: inline;
+}
+.aboutMe h5 {
+    margin: 80px 80px 30px 80px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+}
+.boldName {
+    font-weight: bold;
+    font-size: 25px;
+}
+.aboutMe {
+    margin: 60px;
+    padding: 0px 80px 0px 80px;
+}
+.selfPic, .backgroundImg {
+    margin: 60px 60px 30px 60px;
+    text-align: center;
+}
+hr {
+    margin-right: 50px;
+    margin-left: 50px;
 }
