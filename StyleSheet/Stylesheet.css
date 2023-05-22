@@ -78,7 +78,7 @@ a:hover {
     display: inline;
 }
 .aboutMe h5 {
-    margin: 80px 80px 30px 80px;
+    margin: 50px 80px 30px 80px;
     text-align: center;
     font-size: 30px;
     font-weight: 500;
@@ -87,15 +87,24 @@ a:hover {
     font-weight: bold;
     font-size: 25px;
 }
-.aboutMe {
+.aboutMe, .backgroundImg, .selfPic {
     margin: 60px;
     padding: 0px 80px 0px 80px;
-}
-.selfPic, .backgroundImg {
-    margin: 60px 60px 30px 60px;
     text-align: center;
+
 }
+
+.backgroundImg img, .selfPic img {
+    max-height: 340px;
+    padding: 15px;
+}
+
 hr {
     margin-right: 50px;
     margin-left: 50px;
+}
+
+.csp {
+    font-weight: bold;
+    text-align: center;
 }
