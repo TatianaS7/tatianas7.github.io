@@ -17,6 +17,7 @@ body h1 {
 body {
     display: flex;
 }
+
 .navigation {
     margin: 60px 10px 50px 50px;
     max-width: 400px;
@@ -62,6 +63,8 @@ nav ul li{
 .column img {
     margin: 5px;
     max-height: 320px;
+    border-radius: 10px;
+
 }
 .column img:hover {
     /*opacity: 70%;*/
@@ -108,3 +111,50 @@ hr {
     font-weight: bold;
     text-align: center;
 }
+
+.grid-container {
+    display: grid;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    grid-template-columns: auto auto auto;
+}
+
+.grid-item {
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+#self {
+    width: 280px;
+}
+
+#cork{
+    height: 400px;
+    width: 300px;
+}
+#cork:hover, #koi:hover, #basquiat:hover {
+    opacity: 90%;
+}
+
+.grid-item img, video {
+    height: 400px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+/*#basquiat:hover:after {
+    background: black;
+    opacity: 50%;
+    color: white;
+    content: "Basquiat King Pleasure Exhibit NYC";
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    top: 0;
+    left: 0;
+    margin-top: 20px;
+}
+*/
