@@ -16,52 +16,128 @@
 
   <body>
 
-    <div class="navigation">
-      <div class="logo">
-        <a href="index.html"> <img src="Images/logo.png" alt="Official Logo" width="175px" height="60px"></a>
+    <body id="index">
+      <div class="navigation">
+        <div class="logo">
+          <a href="index.html"> <img src="Images/logo.png" alt="Official Logo" width="175px" height="60px"></a>
+        </div>
+        <br>
+        <nav>
+  
+          <div class="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+            <ul class="dropdown-menu">
+              <li><a href="illustration.html" target="_self">Illustration</a></li>
+              <li><a href="painting.html" target="_self"> Painting</a></li>
+              <li><a href="photography.html" target="_self"> Photography</a></li>
+              <li><a href="restoration.html" target="_self"> Restoration</a></li>
+              <div class="social-icons">
+                <li><a href="https://www.instagram.com/tatibandz_/"" target=" _blank"><img src="images/insta.png"
+                      class="socials"></a></li>
+                <li><a href="https://www.linkedin.com/in/tatiana-stewart-05b148214" target="_blank"><img src="images/linkedin.png"
+                      class="socials"></a></li>
+                <li><a href="https://github.com/TatianaS7" target="_blank"><img src="images/github.png" class="socials"></a></li>
+              </div>
+            </ul>
+  
+          <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+          <script>
+            $(document).ready(function () {
+              $(".hamburger-menu").click(function () {
+                $("nav ul").toggleClass("open");
+                $(this).toggleClass("open");
+              });
+            });
+          </script>
+  
+          <ul>
+            <li><a href="illustration.html" target="_self"> Illustration</a></li>
+            <li><a href="painting.html" target="_self"> Painting</a></li>
+            <li><a href="photography.html" target="_self"> Photography</a></li>
+            <li><a href="restoration.html" target="_self"> Restoration</a></li>
+            <!--<li><a href="/pages/about.html" target="_self">About</a></li>-->
+  
+          </ul>
+          <div class="social-links">
+            <li><a href="https://www.instagram.com/tatibandz_/" target="_blank">Instagram</a></li>
+            <li><a href="https://www.linkedin.com/in/tatiana-stewart-05b148214" target="_blank">LinkedIn</a></li>
+            <li><a href="https://github.com/TatianaS7" target="_blank">GitHub</a></li>
+          </div>
+        </nav>
       </div>
-      <br>
-      <ul class="main">
-        <li class="current"> Illustration</li>
-        <li><a href="painting.html" target="_self"> Painting</a></li>
-        <li><a href="photography.html" target="_self"> Photography</a></li>
-        <li><a href="restoration.html" target="_self"> Restoration</a></li>
-        <!--<li><a href="/pages/about.html" target="_self">About</a></li>-->
-
-      </ul>
-      <div class="social-links">
-        <li><a href="https://www.instagram.com/tatibandz_/" target="_blank">Instagram</a></li>
-        <li><a href="https://www.linkedin.com/in/tatiana-stewart-05b148214" target="_blank">LinkedIn</a></li>
-        <li><a href="https://github.com/TatianaS7" target="_blank">GitHub</a></li>
+  
+      <div class="content">
+      <div class="grid-container">
+      
+        <div class="grid-item">
+          <img src="Images/Girls&Guitars.jpg">
+        </div>
+      
+        <div class="grid-item">
+          <img src="Images/milly.jpg">
+        </div>
+        <div class="grid-item">
+          <img src="Images/speedDate.jpg" class="landscape">
+        </div>
+        <div class="grid-item">
+          <img src="Images/justice.jpg">
+        </div>
+        <div class="grid-item">
+          <img src="Images/SketchFour.jpg">
+        </div>
+        <div class="grid-item">
+          <img src="Images/lions.jpg" class="landscape">
+        </div>
+        <div class="grid-item">
+          <img src="Images/sahara.jpg">
+        </div>
+        <div class="grid-item">
+          <img src="Images/PenOne.jpg">
+        </div>
+        <div class="grid-item">
+          <img src="Images/PenSeven.jpg">
+        </div>
+        <div class="grid-item">
+          <img src="Images/SketchTwo.jpg">
+        </div>
+        <div class="grid-item">
+          <img src="Images/PenFour.jpg">
+        </div>
+        <div class="grid-item">
+          <img src="Images/butterfly.jpg">
+        </div>
+        <div class="grid-item">
+          <img src="Images/SketchOne.jpg">
+        </div>
+        <div class="grid-item">
+          <img src="Images/PenSix.jpg">
+        </div>
+        <div class="grid-item">
+          <img src="Images/PenFive.jpg">
+        </div>
+        <div class="grid-item">
+          <img src="Images/SketchFive.jpg">
+        </div>
+        <div class="grid-item">
+          <img src="Images/PenEight.jpg">
+        </div>
+        <div class="grid-item">
+          <img src="Images/SketchSeven.jpg">
+        </div>
+        <div class="grid-item">
+          <img src="Images/SketchThree.jpg">
+        </div>
+        <div class="grid-item">
+          <img src="Images/koi.jpg" alt="Koi fish">
+        </div>
+        <div class="grid-item">
+          <img src="Images/SketchEight.jpg" class="landscape">
+        </div>
       </div>
-    </div>
-
-    <div class="content">
-      <div class="column">
-        <img src="Images/Girls&Guitars.jpg">
-        <img src="Images/milly.jpg">
-        <img src="Images/speedDate.jpg">
-        <img src="Images/justice.jpg">
-        <img src="Images/SketchFour.jpg">
-        <img src="Images/lions.jpg">
-        <img src="Images/sahara.jpg">
-        <img src="Images/koi.jpg" alt="Koi fish">
-        <img src="Images/PenOne.jpg">
-        <img src="Images/PenSeven.jpg">
-        <img src="Images/SketchTwo.jpg">
-        <img src="Images/PenFour.jpg">
-        <img src="Images/butterfly.jpg">
-        <img src="Images/SketchOne.jpg">
-        <img src="Images/PenSix.jpg">
-        <img src="Images/PenFive.jpg">
-        <img src="Images/SketchFive.jpg">
-        <img src="Images/PenEight.jpg">
-        <img src="Images/SketchSeven.jpg">
-        <img src="Images/SketchThree.jpg">
-        <img src="Images/koi.jpg" alt="Koi fish">
-        <img src="Images/SketchEight.jpg">
       </div>
-    </div>
   </body>
 
 </html>

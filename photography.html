@@ -15,53 +15,152 @@
   </head>
 
   <body>
-    <div>
+    <body id="index">
       <div class="navigation">
         <div class="logo">
           <a href="index.html"> <img src="Images/logo.png" alt="Official Logo" width="175px" height="60px"></a>
         </div>
         <br>
-        <ul class="photoDrop">
-          <li class="current">
-            <h5>Photography<h5>
-          </li>
-          <li><a href="Photography/morocco.html">Morocco</a></li>
-          <li><a href="Photography/ireland.html">Ireland</a></li>
-          <li><a href="Photography/newYork.html">New York</a></li>
-          <li><a href="Photography/california.html">California</a></li>
-        </ul>
-        <div class="social-links">
-          <li><a href="https://www.instagram.com/tatibandz_/" target="_blank">Instagram</a></li>
-          <li><a href="https://www.linkedin.com/in/tatiana-stewart-05b148214" target="_blank">LinkedIn</a></li>
-          <li><a href="https://github.com/TatianaS7" target="_blank">GitHub</a></li>
+        <nav>
+  
+          <div class="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+            <ul class="dropdown-menu">
+              <li class="current"><h5>Photography<h5></li>
+                <li><a href="Photography/morocco.html">Morocco</a></li>
+                <li><a href="Photography/ireland.html">Ireland</a></li>
+                <li><a href="Photography/newYork.html">New York</a></li>
+                <li><a href="Photography/california.html">California</a></li>
+                          <div class="social-icons">
+                <li><a href="https://www.instagram.com/tatibandz_/"" target=" _blank"><img src="images/insta.png"
+                      class="socials"></a></li>
+                <li><a href="https://www.linkedin.com/in/tatiana-stewart-05b148214" target="_blank"><img src="images/linkedin.png"
+                      class="socials"></a></li>
+                <li><a href="https://github.com/TatianaS7" target="_blank"><img src="images/github.png" class="socials"></a></li>
+              </div>
+            </ul>
+  
+          <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+          <script>
+            $(document).ready(function () {
+              $(".hamburger-menu").click(function () {
+                $("nav ul").toggleClass("open");
+                $(this).toggleClass("open");
+              });
+            });
+          </script>
+  
+  <ul class="photoDrop">
+    <li class="current">
+      <h5>Photography<h5>
+    </li>
+    <li><a href="Photography/morocco.html">Morocco</a></li>
+    <li><a href="Photography/ireland.html">Ireland</a></li>
+    <li><a href="Photography/newYork.html">New York</a></li>
+    <li><a href="Photography/california.html">California</a></li>
+
+          </ul>
+          <div class="social-links">
+            <li><a href="https://www.instagram.com/tatibandz_/" target="_blank">Instagram</a></li>
+            <li><a href="https://www.linkedin.com/in/tatiana-stewart-05b148214" target="_blank">LinkedIn</a></li>
+            <li><a href="https://github.com/TatianaS7" target="_blank">GitHub</a></li>
+          </div>
+        </nav>
+      </div>
+      
+      <div class="content">
+      
+        <div class="grid-container">
+      
+          <div class="grid-item">
+            <img src="Images/Photography/Main Page/duck.jpg">
+          </div>
+      
+          <div class="grid-item">
+            <img src="Images/Photography/Main Page/lake.jpg" class="landscape">
+          </div>
+      
+          <div class="grid-item">
+            <img src="Images/Photography/Main Page/londonStreet.jpg">
+          </div>
+      
+          <div class="grid-item">
+            <img src="Images/Photography/Main Page/colorSplash.jpg" class="landscape">
+          </div>
+      
+          <div class="grid-item">
+            <img src="Images/Photography/Main Page/disneyPlant.jpg">
+          </div>
+      
+          <div class="grid-item">
+            <img src="Images/Photography/Main Page/atl.jpg">
+          </div>
+      
+          <div class="grid-item">
+            <img src="Images/Photography/Main Page/bp.jpg">
+          </div>
+      
+          <div class="grid-item">
+            <img src="Images/Photography/Main Page/fireworks.JPG" class="landscape">
+          </div>
+      
+          <div class="grid-item">
+            <img src="Images/Photography/Main Page/sunset.jpg" class="landscape">
+          </div>
+      
+          <div class="grid-item">
+            <img src="Images/Photography/Main Page/disney.jpg">
+          </div>
+      
+          <div class="grid-item">
+            <img src="Images/Photography/Main Page/tacoSpot.jpg">
+          </div>
+      
+          <div class="grid-item">
+            <img src="Images/Photography/Main Page/rooftop.jpg" class="landscape">
+          </div>
+      
+          <div class="grid-item">
+            <img src="Images/Photography/Main Page/fourthWard.jpg">
+          </div>
+      
+          <div class="grid-item">
+            <img src="Images/Photography/Main Page/dandelion.JPG" class="landscape">
+          </div>
+      
+          <div class="grid-item">
+            <img src="Images/Photography/Main Page/plant.JPG">
+          </div>
+      
+          <div class="grid-item" id="cc">
+            <img src="Images/Photography/Main Page/bigSis.JPG" class="landscape">
+          </div>
+      
+          <div class="grid-item">
+            <img src="Images/Photography/Main Page/stoneMountain.jpg">
+          </div>
+      
+          <div class="grid-item">
+            <img src="Images/Photography/Main Page/curt.jpg">
+          </div>
+      
+          <div class="grid-item">
+            <img src="Images/Photography/Main Page/walkway.jpg">
+          </div>
+      
+          <div class="grid-item">
+            <img src="Images/Photography/Main Page/myrtleBeach.jpg">
+          </div>
+      
+          <div class="grid-item">
+            <img src="Images/Photography/Main Page/calypso.jpg" class="landscape">
+          </div>
+      
         </div>
       </div>
-    </div>
-    <div class="content">
-      <div class="column">
-        <img src="Images/Photography/Main Page/duck.jpg">
-        <img src="Images/Photography/Main Page/lake.jpg">
-        <img src="Images/Photography/Main Page/londonStreet.jpg">
-        <img src="Images/Photography/Main Page/colorSplash.jpg">
-        <img src="Images/Photography/Main Page/disneyPlant.jpg">
-        <img src="Images/Photography/Main Page/atl.jpg">
-        <img src="Images/Photography/Main Page/bp.jpg">
-        <img src="Images/Photography/Main Page/fireworks.JPG">
-        <img src="Images/Photography/Main Page/sunset.jpg">
-        <img src="Images/Photography/Main Page/disney.jpg">
-        <img src="Images/Photography/Main Page/tacoSpot.jpg">
-        <img src="Images/Photography/Main Page/rooftop.jpg">
-        <img src="Images/Photography/Main Page/fourthWard.jpg">
-        <img src="Images/Photography/Main Page/dandelion.JPG">
-        <img src="Images/Photography/Main Page/plant.JPG">
-        <img src="Images/Photography/Main Page/bigSis.JPG">
-        <img src="Images/Photography/Main Page/stoneMountain.jpg">
-        <img src="Images/Photography/Main Page/curt.jpg">
-        <img src="Images/Photography/Main Page/walkway.jpg">
-        <img src="Images/Photography/Main Page/myrtleBeach.jpg">
-        <img src="Images/Photography/Main Page/calypso.jpg">
-      </div>
-    </div>
 
   </body>
 

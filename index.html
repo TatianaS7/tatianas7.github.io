@@ -21,6 +21,36 @@
       </div>
       <br>
       <nav>
+
+        <div class="hamburger-menu">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+          <ul class="dropdown-menu">
+            <li><a href="illustration.html" target="_self">Illustration</a></li>
+            <li><a href="painting.html" target="_self"> Painting</a></li>
+            <li><a href="photography.html" target="_self"> Photography</a></li>
+            <li><a href="restoration.html" target="_self"> Restoration</a></li>
+            <div class="social-icons">
+              <li><a href="https://www.instagram.com/tatibandz_/"" target=" _blank"><img src="images/insta.png"
+                    class="socials"></a></li>
+              <li><a href="https://www.linkedin.com/in/tatiana-stewart-05b148214" target="_blank"><img src="images/linkedin.png"
+                    class="socials"></a></li>
+              <li><a href="https://github.com/TatianaS7" target="_blank"><img src="images/github.png" class="socials"></a></li>
+            </div>
+          </ul>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+          $(document).ready(function () {
+            $(".hamburger-menu").click(function () {
+              $("nav ul").toggleClass("open");
+              $(this).toggleClass("open");
+            });
+          });
+        </script>
+
         <ul>
           <li><a href="illustration.html" target="_self"> Illustration</a></li>
           <li><a href="painting.html" target="_self"> Painting</a></li>
