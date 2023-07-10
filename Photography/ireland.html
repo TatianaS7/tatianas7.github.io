@@ -23,45 +23,133 @@
 
   <body>
 
-    <div class="navigation">
-      <div class="logo">
-        <a href="../index.html"> <img src="../Images/logo.png" alt="Official Logo" width="175px" height="60px"></a>
-      </div>
-      <br>
-      <ul class="photoDrop">
-        <li>
-          <h5><a href="../photography.html">Photography<h5></a>
-        </li>
-        <li><a href="morocco.html">Morocco</li>
-        <li class="current">Ireland</li>
-        <li><a href="newYork.html">New York</a></li>
-        <li><a href="california.html">California</a></li>
-      </ul>
-      <div class="social-links">
-        <li><a href="https://www.instagram.com/tatibandz_/" target="_blank">Instagram</a></li>
-        <li><a href="https://www.linkedin.com/in/tatiana-stewart-05b148214" target="_blank">LinkedIn</a></li>
-        <li><a href="https://github.com/TatianaS7" target="_blank">GitHub</a></li>
-      </div>
-    </div>
+    <body id="index">
+      <div class="navigation">
+        <div class="logo">
+          <a href="../index.html"> <img src="../Images/logo.png" alt="Official Logo" width="175px" height="60px"></a>
+        </div>
+        <br>
+        <nav>
 
-    <div class="content">
-      <div class="column">
+          <div class="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+          <ul class="dropdown-menu">
+            <li class="current"><a href="../photography.html">
+              <h5>Photography<h5></a>
+            </li>
+            <li><a href="morocco.html">Morocco</a></li>
+            <li><a href="ireland.html" class="current"><b>Ireland</b></a></li>
+            <li><a href="newYork.html">New York</a></li>
+            <li><a href="california.html">California</a></li>
+            <div class="social-icons">
+              <li><a href="https://www.instagram.com/tatibandz_/"" target=" _blank"><img src="../Images/insta.png"
+                    class="socials"></a></li>
+              <li><a href="https://www.linkedin.com/in/tatiana-stewart-05b148214" target="_blank"><img
+                    src="../Images/linkedin.png" class="socials"></a></li>
+              <li><a href="https://github.com/TatianaS7" target="_blank"><img src="../Images/github.png"
+                    class="socials"></a></li>
+            </div>
+          </ul>
+
+          <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+          <script>
+            $(document).ready(function () {
+              $(".hamburger-menu").click(function () {
+                $("nav ul").toggleClass("open");
+                $(this).toggleClass("open");
+              });
+            });
+          </script>
+
+          <ul class="photoDrop">
+            <li class="current"><a href="../photography.html">
+              <h5>Photography<h5></a>
+            </li>
+            <li><a href="morocco.html">Morocco</a></li>
+            <li><a href="ireland.html" class="current">Ireland</a></li>
+            <li><a href="newYork.html">New York</a></li>
+            <li><a href="california.html">California</a></li>
+
+          </ul>
+          <div class="social-links">
+            <li><a href="https://www.instagram.com/tatibandz_/" target="_blank">Instagram</a></li>
+            <li><a href="https://www.linkedin.com/in/tatiana-stewart-05b148214" target="_blank">LinkedIn</a></li>
+            <li><a href="https://github.com/TatianaS7" target="_blank">GitHub</a></li>
+          </div>
+        </nav>
+      </div>
+
+      <div class="content">
+
+        <div class="grid-container" id="ireland">
+
+          <div class="grid-item">
         <img src="../Images/Photography/Ireland/building3.jpg">
+        </div>
+
+        <div class="grid-item">
         <img src="../Images/Photography/Ireland/walk.jpg">
-        <img src="../Images/Photography/Ireland/ledge.jpg">
-        <img src="../Images/Photography/Ireland/walk2.jpg">
-        <img src="../Images/Photography/Ireland/boats.jpg">
-        <img src="../Images/Photography/Ireland/walk3.jpg">
-        <img src="../Images/Photography/Ireland/sav.jpg">
-        <img src="../Images/Photography/Ireland/walk5.jpg">
-        <img src="../Images/Photography/Ireland/building1.jpg">
-        <img src="../Images/Photography/Ireland/car.jpg">
-        <img src="../Images/Photography/Ireland/bridge.jpg">
-        <img src="../Images/Photography/Ireland/walk4.jpg">
-        <img src="../Images/Photography/Ireland/tower.jpg">
-        <img src="../Images/Photography/Ireland/houses.jpg">
-        <img src="../Images/Photography/Ireland/building2.jpg">
+      </div>
+
+        <div class="grid-item">
+          <img src="../Images/Photography/Ireland/ledge.jpg">
+        </div>
+
+        <div class="grid-item">
+          <img src="../Images/Photography/Ireland/walk2.jpg">
+        </div>
+
+        <div class="grid-item">
+          <img src="../Images/Photography/Ireland/boats.jpg">
+        </div>
+
+        <div class="grid-item">
+          <img src="../Images/Photography/Ireland/walk3.jpg">
+        </div>
+
+        <div class="grid-item">
+          <img src="../Images/Photography/Ireland/sav.jpg">
+        </div>
+
+        <div class="grid-item">
+          <img src="../Images/Photography/Ireland/walk5.jpg">
+        </div>
+
+        <div class="grid-item">
+          <img src="../Images/Photography/Ireland/building1.jpg">
+        </div>
+        
+        <div class="grid-item">
+          <img src="../Images/Photography/Ireland/car.jpg">
+        </div>
+
+        <div class="grid-item">
+          <img src="../Images/Photography/Ireland/bridge.jpg">
+        </div>
+
+        <div class="grid-item">
+          <img src="../Images/Photography/Ireland/walk4.jpg">
+        </div>
+
+        <div class="grid-item">
+          <img src="../Images/Photography/Ireland/tower.jpg">
+        </div>
+
+        <div class="grid-item">
+          <img src="../Images/Photography/Ireland/houses.jpg">
+        </div>
+
+        <div class="grid-item">
+          <img src="../Images/Photography/Ireland/building2.jpg">
+        </div>
+
+        <div class="grid-item">
         <img src="../Images/Photography/Ireland/building4.jpg">
+      </div>
+
       </div>
     </div>
   </body>

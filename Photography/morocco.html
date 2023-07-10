@@ -21,55 +21,141 @@
 <meta name="theme-color" content="#ffffff">
   </head>
 
-  <body>
+    <body id="index">
+      <div class="navigation">
+        <div class="logo">
+          <a href="../index.html"> <img src="../Images/logo.png" alt="Official Logo" width="175px" height="60px"></a>
+        </div>
+        <br>
+        <nav>
 
-    <div class="navigation">
-      <div class="logo">
-        <a href="../index.html"> <img src="../Images/logo.png" alt="Official Logo" width="175px" height="60px"></a>
-      </div>
-      <br>
-      <ul class="photoDrop">
-        <li>
-          <h5><a href="../photography.html">Photography<h5></a>
-        </li>
-        <li class="current"> Morocco</li>
-        <li><a href="ireland.html">Ireland</a></li>
-        <li><a href="newYork.html">New York</a></li>
-        <li><a href="california.html">California</a></li>
-      </ul>
-      <div class="social-links">
-        <li><a href="https://www.instagram.com/tatibandz_/" target="_blank">Instagram</a></li>
-        <li><a href="https://www.linkedin.com/in/tatiana-stewart-05b148214" target="_blank">LinkedIn</a></li>
-        <li><a href="https://github.com/TatianaS7" target="_blank">GitHub</a></li>
-      </div>
-    </div>
+          <div class="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+          <ul class="dropdown-menu">
+            <li class="current"><a href="../photography.html">
+              <h5>Photography<h5></a>
+            </li>
+            <li class="current"><a href="morocco.html"><b>Morocco</b></a></li>
+            <li><a href="ireland.html">Ireland</a></li>
+            <li><a href="newYork.html">New York</a></li>
+            <li><a href="california.html">California</a></li>
+            <div class="social-icons">
+              <li><a href="https://www.instagram.com/tatibandz_/"" target=" _blank"><img src="../Images/insta.png"
+                    class="socials"></a></li>
+              <li><a href="https://www.linkedin.com/in/tatiana-stewart-05b148214" target="_blank"><img
+                    src="../Images/linkedin.png" class="socials"></a></li>
+              <li><a href="https://github.com/TatianaS7" target="_blank"><img src="../Images/github.png"
+                    class="socials"></a></li>
+            </div>
+          </ul>
 
-    <div class="content">
-      <div class="column">
-        <img src="../Images/Photography/Morocco/m2.jpg">
-        <img src="../Images/Photography/Morocco/m10.jpg">
-        <img src="../Images/Photography/Morocco/m16.jpg">
-        <img src="../Images/Photography/Morocco/m1.jpg">
-        <img src="../Images/Photography/Morocco/m4.jpg">
-        <img src="../Images/Photography/Morocco/m12.jpg">
-        <img src="../Images/Photography/Morocco/m5.jpg">
-        <img src="../Images/Photography/Morocco/m6.jpg">
-        <img src="../Images/Photography/Morocco/m11.jpg">
-        <img src="../Images/Photography/Morocco/m8.jpg">
-        <img src="../Images/Photography/Morocco/m24.jpg">
-        <img src="../Images/Photography/Morocco/m23.jpg">
-        <img src="../Images/Photography/Morocco/m9.jpg">
-        <img src="../Images/Photography/Morocco/m22.jpg">
-        <img src="../Images/Photography/Morocco/m13.jpg">
-        <img src="../Images/Photography/Morocco/m17.jpg">
-        <img src="../Images/Photography/Morocco/m7.jpg">
-        <img src="../Images/Photography/Morocco/m20.jpg">
-        <img src="../Images/Photography/Morocco/m3.jpg">
-        <img src="../Images/Photography/Morocco/m21.jpg">
-        <img src="../Images/Photography/Morocco/m15.jpg">
-        <img src="../Images/Photography/Morocco/m18.jpg">
-        <img src="../Images/Photography/Morocco/m19.jpg">
-        <img src="../Images/Photography/Morocco/m14.jpg">
+          <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+          <script>
+            $(document).ready(function () {
+              $(".hamburger-menu").click(function () {
+                $("nav ul").toggleClass("open");
+                $(this).toggleClass("open");
+              });
+            });
+          </script>
+
+          <ul class="photoDrop">
+            <li class="current"><a href="../photography.html">
+              <h5>Photography<h5></a>
+            </li>
+              <li><a href="morocco.html" class="current">Morocco</a></li>
+            <li><a href="ireland.html">Ireland</a></li>
+            <li><a href="newYork.html">New York</a></li>
+            <li><a href="california.html">California</a></li>
+
+          </ul>
+          <div class="social-links">
+            <li><a href="https://www.instagram.com/tatibandz_/" target="_blank">Instagram</a></li>
+            <li><a href="https://www.linkedin.com/in/tatiana-stewart-05b148214" target="_blank">LinkedIn</a></li>
+            <li><a href="https://github.com/TatianaS7" target="_blank">GitHub</a></li>
+          </div>
+        </nav>
+      </div>
+
+      <div class="content">
+
+        <div class="grid-container" id="morocco">
+
+          <div class="grid-item">
+            <img src="../Images/Photography/Morocco/m2.jpg">
+          </div>
+          <div class="grid-item">
+            <img src="../Images/Photography/Morocco/m10.jpg">
+          </div>
+          <div class="grid-item">
+            <img src="../Images/Photography/Morocco/m16.jpg">
+          </div>
+          <div class="grid-item">
+            <img src="../Images/Photography/Morocco/m1.jpg">
+          </div>
+          <div class="grid-item">
+            <img src="../Images/Photography/Morocco/m4.jpg">
+          </div>
+          <div class="grid-item">
+            <img src="../Images/Photography/Morocco/m12.jpg">
+          </div>
+          <div class="grid-item">
+            <img src="../Images/Photography/Morocco/m5.jpg">
+          </div>
+          <div class="grid-item">
+            <img src="../Images/Photography/Morocco/m6.jpg">
+          </div>
+          <div class="grid-item">
+            <img src="../Images/Photography/Morocco/m11.jpg">
+          </div>
+          <div class="grid-item">
+            <img src="../Images/Photography/Morocco/m8.jpg">
+          </div>
+          <div class="grid-item">
+            <img src="../Images/Photography/Morocco/m24.jpg">
+          </div>
+          <div class="grid-item">
+            <img src="../Images/Photography/Morocco/m23.jpg">
+          </div>
+          <div class="grid-item">
+            <img src="../Images/Photography/Morocco/m9.jpg">
+          </div>
+          <div class="grid-item">
+            <img src="../Images/Photography/Morocco/m22.jpg">
+          </div>
+          <div class="grid-item">
+            <img src="../Images/Photography/Morocco/m13.jpg">
+          </div>
+          <div class="grid-item">
+            <img src="../Images/Photography/Morocco/m17.jpg">
+          </div>
+          <div class="grid-item">
+            <img src="../Images/Photography/Morocco/m7.jpg">
+          </div>
+          <div class="grid-item">
+            <img src="../Images/Photography/Morocco/m20.jpg">
+          </div>
+          <div class="grid-item">
+            <img src="../Images/Photography/Morocco/m3.jpg">
+          </div>
+          <div class="grid-item">
+            <img src="../Images/Photography/Morocco/m21.jpg">
+          </div>
+          <div class="grid-item">
+            <img src="../Images/Photography/Morocco/m15.jpg">
+          </div>
+          <div class="grid-item">
+            <img src="../Images/Photography/Morocco/m18.jpg">
+          </div>
+          <div class="grid-item">
+            <img src="../Images/Photography/Morocco/m19.jpg">
+          </div>
+          <div class="grid-item">
+            <img src="../Images/Photography/Morocco/m14.jpg">
+          </div>
       </div>
     </div>
   </body>

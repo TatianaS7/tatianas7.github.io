@@ -23,53 +23,163 @@
 
   <body>
 
-    <div class="navigation">
-      <div class="logo">
-        <a href="../index.html"> <img src="../Images/logo.png" alt="Official Logo" width="175px" height="60px"></a>
-      </div>
-      <br>
-      <ul class="photoDrop">
-        <li>
-          <h5><a href="../photography.html">Photography<h5></a>
-        </li>
-        <li><a href="morocco.html">Morocco</li>
-        <li><a href="ireland.html">Ireland</a></li>
-        <li><a href="newYork.html">New York</a></li>
-        <li class="current">California</a></li>
-      </ul>
-      <div class="social-links">
-        <li><a href="https://www.instagram.com/tatibandz_/" target="_blank">Instagram</a></li>
-        <li><a href="https://www.linkedin.com/in/tatiana-stewart-05b148214" target="_blank">LinkedIn</a></li>
-        <li><a href="https://github.com/TatianaS7" target="_blank">GitHub</a></li>
-      </div>
-    </div>
+    <body id="index">
+      <div class="navigation">
+        <div class="logo">
+          <a href="../index.html"> <img src="../Images/logo.png" alt="Official Logo" width="175px" height="60px"></a>
+        </div>
+        <br>
+        <nav>
 
-    <div class="content">
-      <div class="column">
-        <img src="../Images/Photography/California/bird3.jpg">
-        <img src="../Images/Photography/California/sky3.jpg">
-        <img src="../Images/Photography/California/cove.jpg">
-        <img src="../Images/Photography/California/matador2.JPEG">
-        <img src="../Images/Photography/California/view3.jpg">
-        <img src="../Images/Photography/California/matador1.JPG">
-        <img src="../Images/Photography/California/water2.jpg">
-        <img src="../Images/Photography/California/water4.jpg">
-        <img src="../Images/Photography/California/cove2.jpg">
-        <img src="../Images/Photography/California/sky2.jpg">
-        <img src="../Images/Photography/California/birdStare.jpg">
-        <img src="../Images/Photography/California/matadorBird.JPG">
-        <img src="../Images/Photography/California/water3.jpg">
-        <img src="../Images/Photography/California/seaLions.jpg">
-        <img src="../Images/Photography/California/sky1.jpg">
-        <img src="../Images/Photography/California/water2.jpg">
-        <img src="../Images/Photography/California/seaLions2.jpg">
-        <img src="../Images/Photography/California/view2.jpg">
-        <img src="../Images/Photography/California/seaLions3.jpg">
-        <img src="../Images/Photography/California/view4.JPG">
-        <img src="../Images/Photography/California/hike1.jpg">
-        <img src="../Images/Photography/California/view5.JPEG">
-        <img src="../Images/Photography/California/view1.jpg">
-        <img src="../Images/Photography/California/hike2.jpg">
+          <div class="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+          <ul class="dropdown-menu">
+            <li class="current"><a href="../photography.html">
+              <h5>Photography<h5></a>
+            </li>
+            <li><a href="morocco.html">Morocco</a></li>
+            <li><a href="ireland.html">Ireland</a></li>
+            <li><a href="newYork.html">New York</a></li>
+            <li><a href="california.html" class="current"><b>California</b></a></li>
+            <div class="social-icons">
+              <li><a href="https://www.instagram.com/tatibandz_/"" target=" _blank"><img src="../Images/insta.png"
+                    class="socials"></a></li>
+              <li><a href="https://www.linkedin.com/in/tatiana-stewart-05b148214" target="_blank"><img
+                    src="../Images/linkedin.png" class="socials"></a></li>
+              <li><a href="https://github.com/TatianaS7" target="_blank"><img src="../Images/github.png"
+                    class="socials"></a></li>
+            </div>
+          </ul>
+
+          <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+          <script>
+            $(document).ready(function () {
+              $(".hamburger-menu").click(function () {
+                $("nav ul").toggleClass("open");
+                $(this).toggleClass("open");
+              });
+            });
+          </script>
+
+          <ul class="photoDrop">
+            <li class="current"><a href="../photography.html">
+              <h5>Photography<h5></a>
+            </li>
+            <li><a href="morocco.html">Morocco</a></li>
+            <li><a href="ireland.html">Ireland</a></li>
+            <li><a href="newYork.html">New York</a></li>
+            <li><a href="california.html" class="current">California</a></li>
+
+          </ul>
+          <div class="social-links">
+            <li><a href="https://www.instagram.com/tatibandz_/" target="_blank">Instagram</a></li>
+            <li><a href="https://www.linkedin.com/in/tatiana-stewart-05b148214" target="_blank">LinkedIn</a></li>
+            <li><a href="https://github.com/TatianaS7" target="_blank">GitHub</a></li>
+          </div>
+        </nav>
+      </div>
+
+      <div class="content">
+
+        <div class="grid-container" id="california">
+
+          <div class="grid-item">
+            <img src="../Images/Photography/California/bird3.jpg">
+          </div>
+          <div>
+            <img src="../Images/Photography/California/sky3.jpg" class="landscape">
+          </div>
+
+          <div class="grid-item">
+            <img src="../Images/Photography/California/cove.jpg">
+          </div>
+
+          <div class="grid-item">
+            <img src="../Images/Photography/California/matador2.JPEG">
+          </div>
+
+          <div>
+            <img src="../Images/Photography/California/view3.jpg" class="landscape">
+          </div>
+
+          <div class="grid-item">
+            <img src="../Images/Photography/California/matador1.JPG">
+          </div>
+
+          <div>
+            <img src="../Images/Photography/California/water2.jpg" class="landscape">
+          </div>
+
+          <div>
+            <img src="../Images/Photography/California/water4.jpg" class="landscape">
+          </div>
+
+          <div class="grid-item">
+            <img src="../Images/Photography/California/cove2.jpg">
+          </div>
+
+          <div>
+            <img src="../Images/Photography/California/sky2.jpg" class="landscape">
+          </div>
+
+          <div class="grid-item">
+            <img src="../Images/Photography/California/birdStare.jpg">
+          </div>
+
+          <div class="grid-item">
+            <img src="../Images/Photography/California/matadorBird.JPG">
+          </div>
+
+          <div>
+            <img src="../Images/Photography/California/water3.jpg" class="landscape">
+          </div>
+
+          <div class="grid-item">
+            <img src="../Images/Photography/California/seaLions.jpg">
+          </div>
+
+          <div>
+            <img src="../Images/Photography/California/sky1.jpg"class="landscape">
+          </div>
+
+          <div>
+            <img src="../Images/Photography/California/water2.jpg" class="landscape">
+          </div>
+
+          <div class="grid-item">
+            <img src="../Images/Photography/California/seaLions2.jpg">
+          </div>
+
+          <div>
+            <img src="../Images/Photography/California/view2.jpg" class="landscape">
+          </div>
+
+          <div class="grid-item">
+            <img src="../Images/Photography/California/seaLions3.jpg">
+          </div>
+
+          <div class="grid-item">
+            <img src="../Images/Photography/California/view4.JPG">
+          </div>
+
+          <div>
+            <img src="../Images/Photography/California/hike1.jpg" class="landscape">
+          </div>
+
+          <div class="grid-item">
+            <img src="../Images/Photography/California/view5.JPEG">
+          </div>
+
+          <div>
+            <img src="../Images/Photography/California/view1.jpg" class="landscape">
+          </div>
+
+          <div>
+            <img src="../Images/Photography/California/hike2.jpg" class="landscape">
+          </div>
 
       </div>
     </div>

@@ -2,7 +2,26 @@
    width: 260px;
    height: 80px;
 }
+img.landscape { 
+    height: 320px;
+    width: max-content;
+    border-radius: 10px;
+    margin: 10px;
+}
 
+#photography img.landscape, #california img.landscape {
+    width: max-content;
+    height: 320px;
+}
+
+#illustration img.landscape, #restoration img.landscape {
+    width: max-content;
+    height: 320px;
+}
+
+.landscape:hover {
+    transform: scale(1.3);
+}
 navigation ul li a{
     color: black;
 }
@@ -11,6 +30,9 @@ body h1 {
 }
 body {
     display: flex;
+}
+.current {
+    font-weight: 600;
 }
 
 .navigation {
@@ -28,15 +50,6 @@ nav ul li{
     line-height: 25px;
 }
 
-.photoDrop .current {
-    font-weight: 600;
-    color: forestgreen;
-}
-.main .current {
-    color: forestgreen;
-    font-weight: 600;
-    font-size: large;
-}
 .social-links {
     list-style: none;
     padding: 20px 20px 20px 30px;
@@ -53,14 +66,8 @@ nav ul li{
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.column img {
-    margin: 5px;
-    max-height: 320px;
-    border-radius: 10px;
 
-}
-.column img:hover {
-    /*opacity: 70%;*/
+.grid-item img:hover {
     transform: scale(1.3);
 }
 a:link, a:visited {
@@ -71,8 +78,16 @@ a:hover {
     color: forestgreen;
 }
 
+#photography img, #ireland img, #morocco img, #newYork img, #california img {
+    height: 320px;
+    width: 240px;
+}
+#illustration img, #painting img {
+    height: 320px;
+    width: 240px;
+}
 /*STYLES FOR SMALLER SCREENS */
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
     body {
         display: block;
     }
@@ -83,6 +98,9 @@ a:hover {
     .logo img {
         width: 150px;
         height: 40px;
+    }
+    a .current {
+        font-weight: bold;
     }
     .navigation {
         display: flex;
@@ -103,7 +121,6 @@ a:hover {
     height: 30px;
     position: relative;
   }
- 
 
   .hamburger-menu:before,
   .hamburger-menu:after {
@@ -117,11 +134,11 @@ a:hover {
   }
 
   .hamburger-menu:before {
-    top: -8px;
+    top: -3px;
   }
 
   .hamburger-menu:after {
-    bottom: -8px;
+    bottom: -3px;
   }
 
   .hamburger-menu.open {
@@ -129,11 +146,11 @@ a:hover {
   }
 
   .hamburger-menu.open:before {
-    transform: translateY(8px) rotate(45deg);
+    transform: translateY(15px) rotate(45deg);
   }
 
   .hamburger-menu.open:after {
-    transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(-17px) rotate(-45deg);
   }
     .navigation ul.open {
         display: flex; /* Show the navigation links when the hamburger menu is clicked */
@@ -158,14 +175,35 @@ a:hover {
         color: black;
         font-weight: 400;
       }
-.social-icons {
-    display: flex;
-    margin-top: 10px;
-}
-      .socials {
-    height: 20px;
-    margin: 5px;
-}
+        .social-icons {
+            display: flex;
+            margin-top: 10px;
+        }
+        .socials {
+        height: 20px;
+        margin: 5px;
+    }
+ img.landscape {
+    height: max-content;    
+    width: 300px;
+      }
+      #photography img.landscape, #california img.landscape {
+        width: 300px;
+        height: max-content;
+      }      
+      #illustration img.landscape, #restoration img.landscape {
+        width: 300px;
+        height: max-content;
+      }
+
+    #photography img, #morocco img, #ireland img, #newYork img, #california img {
+        width: 300px;
+        height: 400px;
+      }
+      #illustration img, #painting img {
+        width: 300px;
+        height: 400px;
+      }
 }
 
 /* ABOUT ME PAGE STYLES
@@ -210,18 +248,13 @@ hr {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto auto;
 }
 
 .grid-item {
     padding: 10px;
     font-size: 30px;
     text-align: center;
-  }
-
-  .landscape {
-    max-height: 250px;
-    vertical-align:middle;
   }
 
 
