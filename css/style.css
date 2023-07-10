@@ -3,7 +3,7 @@
    height: 80px;
 }
 img.landscape { 
-    height: 320px;
+    max-height: 320px;
     width: max-content;
     border-radius: 10px;
     margin: 10px;
@@ -11,7 +11,7 @@ img.landscape {
 
 #photography img.landscape, #california img.landscape {
     width: max-content;
-    height: 320px;
+    max-height: 320px;
 }
 
 #illustration img.landscape, #restoration img.landscape {
@@ -188,11 +188,11 @@ a:hover {
     width: 300px;
       }
       #photography img.landscape, #california img.landscape {
-        width: 300px;
+        max-width: 300px;
         height: max-content;
       }      
       #illustration img.landscape, #restoration img.landscape {
-        width: 300px;
+        max-width: 300px;
         height: max-content;
       }
 
