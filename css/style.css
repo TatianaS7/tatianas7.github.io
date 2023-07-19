@@ -25,6 +25,19 @@ img.landscape {
 navigation ul li a{
     color: black;
 }
+.about {
+    margin: 30px;
+}
+.intro {
+    line-height: 2.5;
+    font-weight: 600;
+    margin: 30px;
+    margin-bottom: 50px;
+    text-align: left;
+}
+hr {
+    margin-bottom: 30px;
+}
 body h1 {
     margin-left: 10px;
 }
@@ -87,6 +100,17 @@ a:hover {
 }
 /*STYLES FOR SMALLER SCREENS */
 @media screen and (max-width: 767px){
+    .about {
+        text-align: center;
+        margin-top: 0;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .intro {
+        text-align: justify;
+        font-size: 12px;
+        line-height: 2;
+    }
     body {
         display: block;
     }
