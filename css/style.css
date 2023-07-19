@@ -168,7 +168,11 @@ a:hover {
       }
       .content {
         margin: 0px;
+        padding: 10px 30px 10px 30px;
       }
+      .grid-item img:hover {
+        transform: none;
+    }    
       .dropdown-menu a {
         color: black;
         font-weight: 400;
@@ -182,25 +186,25 @@ a:hover {
         margin: 5px;
     }
         img.landscape {
-        height: 250px;    
-        width: 350px;
+        height: 200px;    
+        width: 300px;
       }
       #photography img.landscape, #california img.landscape {
-        width: 350px;
-        height: 250px;
+        width: 300px;
+        height: 200px;
       }      
       #illustration img.landscape, #restoration img.landscape {
-        width: 350px;
-        height: 250px;
+        width: 300px;
+        height: 200px;
       }
 
     #photography img, #morocco img, #ireland img, #newYork img, #california img {
-        width: 350px;
-        height: 450px;
+        width: 300px;
+        height: 400px;
       }
       #illustration img, #painting img {
-        width: 350px;
-        height: 450px;
+        width: 300px;
+        height: 400px;
       }
 }
 
